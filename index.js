@@ -38,6 +38,21 @@ export function RegisterRoute(/*String*/route, /*String*/endpoint){
 	Routes.set(_route,endpoint);
 }
 
+/*Clears all routes*/
+export function ClearRoutes(){
+	Routes.clear();
+}
+
+/*Removes the provided route from the map, returns true on success and false if it didn't exist*/
+export function RemoveRoute(/*String*/ route){
+	return Routes.delete(route);
+}
+
+/*Gets the routes value or undefined*/
+export function GetRouteValue(/*String*/ route){
+	return Routes.get(route);
+}
+
 /*Gets the value inside the kvp where key is the first string of the url<br>
  * For example kvps = [["a","b"]] then GetEndpointFromUrl("/a/nonce/") == "b"<br>
  * Only the first slash if it exists will be removed, any other that will be treated as part of the url<br>

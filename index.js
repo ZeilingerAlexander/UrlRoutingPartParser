@@ -60,9 +60,13 @@ export function GetRouteValue(/*String*/ route){
  * If an url is provided thats first sub url is longer then the longest registered url endpoint it will only go as far as the longest one<br>
  * return undefined if not found*/
 export async function GetEndpointFromUrl(/*String*/url){
+	console.log(url);
     if (url.startsWith("/")){
         url = url.substring(1,url.length);
     }
+	// if url still starts with a slash its invalid
+	if (url.startsWith("/"
+		TODO : FINISH
 
     let tempUrl = "";
     let maxlength = url.length > longestRouteLength ? longestRouteLength : url.length;
@@ -75,13 +79,11 @@ export async function GetEndpointFromUrl(/*String*/url){
             tempUrl += url[i];
         }
     }
-	
+
 	// validate if exited early due to too long url provided, this means that the endpoint is invalid
-	if (i != url.length - 1 && url[i] !== "/"){
+	if (i !== url.length && url[i] !== "/"){
 		return undefined;
 	}
 
-    // normalize the remainder
-    url = tempUrl.toLowerCase();
-    return Routes.get(tempUrl);
+    return Routes.get(tempUrl.toLowerCase());
 }

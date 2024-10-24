@@ -4,9 +4,7 @@
   "description": "simple parser for node js url parts",
   "module": "./index.js",
   "main": "./index.js",
-  "scripts": {
-    "test": "NODE_OPTIONS='--experimental-vm-modules --experimental-specifier-resolution=node' jest"
-  },
+  "scripts": {},
   "keywords": [
     "url",
     "route"
@@ -22,8 +20,5 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/ZeilingerAlexander/UrlRoutingPartParser"
-  },
-  "devDependencies": {
-    "jest": "^29.7.0"
   }
 }

@@ -1,7 +1,7 @@
 {
-  "name": "url-route-getroutingendpoint",
-  "version": "1.0.1",
-  "description": "Gets the routing endpoint from the provided url and the availiable routing endpoints, this can be used for http server request routing",
+  "name": "url-routing-part-parser",
+  "version": "1.0.0",
+  "description": "simple parser for node js url parts",
   "module": "./index.js",
   "main": "./index.js",
   "scripts": {
@@ -21,7 +21,7 @@
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "TODO : Add me"
+    "url": "https://github.com/ZeilingerAlexander/UrlRoutingPartParser"
   },
   "devDependencies": {
     "jest": "^29.7.0"

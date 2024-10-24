@@ -1,4 +1,4 @@
-UrlRouteGetRoutingEndpoint, gets the requested route from an url
+UrlPartParser, parses and returns requested parts of the url 
 
 Copyright (C) 2024 Zeilinger ALexander 
 
